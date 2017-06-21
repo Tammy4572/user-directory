@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+.bodyWrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.userDiv{
+    display: flex;
+    flex-direction: column;
+
+    border: .5px solid #ebebeb;
+}
+.name{
+    color: #4a7dd1;
+    font-weight: bold;
+}
+.title{
+    color: #7b8083;
+}
+.companyName{
+    color: #7b8083;
+}
+.lookingForWork{
+    color: #cf7674;
+}
+.thumbnail{
+    width: 70%;
+    margin: auto;
+}
