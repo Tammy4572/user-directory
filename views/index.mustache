@@ -1,21 +1,21 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./public/styles.css">
+
+    <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
     <div class="body-wrapper">
         {{#users}}
-            <div class="userDiv" src={{avatar}}></img>
-            <a class="name" href="{{id}}">{{name}}</a>
-            {{title}}<p class="working"> {{job}}{{company}}</p>{{/title}}
-            {{^title}}<p class="lookingForWork">Available for Hire</p>{{/title}} 
+        <div class="userDiv">
+            <img class="profilePic" src={{avatar}}/>
+            <div class="user-info">
+                <a class="name" href="{{id}}">{{name}}</a>
+                {{#job}}<p class="working">{{job}}, {{company}}</p>{{/job}}
+                {{^job}}<p class="lookingForWork">Available for Hire</p>{{/job}}
             </div>
+        </div>
         {{/users}}
     </div>
 </body>
 </html>
+

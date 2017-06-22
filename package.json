@@ -16,6 +16,7 @@
   "author": "Tammy Castro",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "emmet": "^1.6.3",
     "express": "^4.15.3",
     "mustache": "^2.3.0",
