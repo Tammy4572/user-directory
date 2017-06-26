@@ -11,7 +11,7 @@ application.set('view engine', 'mustache');
     
 application.use(bodyParser.urlencoded());
 
-application.use(express.static('public'));
+application.use('/public', express.static('./public'));
 
 application.get('/', function(request, response){
     response.render('index', data);
@@ -31,4 +31,4 @@ application.get('/:id', function(request, response){
     response.render('profile', profile[0]);
 });
 
-application.listen(3000, 'localhost');
+application.listen(3000);
